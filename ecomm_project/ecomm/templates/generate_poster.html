@@ -1,0 +1,13 @@
+<form method="POST" action="{% url 'generate_poster' %}">
+    {% csrf_token %}
+    <label for="first_name">First Name:</label>
+    <input type="text" name="first_name"><br>
+
+    <label for="last_name">Last Name:</label>
+    <input type="text" name="last_name"><br>
+
+    <label for="bounty_amount">Bounty Amount:</label>
+    <input type="number" name="bounty_amount"><br>
+
+    <input type="submit" value="Generate Poster">
+</form>

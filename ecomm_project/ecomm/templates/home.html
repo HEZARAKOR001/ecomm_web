@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Customized Onepiece Wanted Poster</title>
+  <style>
+    /* CSS styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #232f3e;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    main {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+    .product-container {
+      max-width: 800px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .product-image {
+      width: 100%;
+      max-height: 400px;
+      object-fit: contain;
+      margin-bottom: 20px;
+    }
+    .product-title {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .product-price {
+      font-size: 18px;
+      color: #B12704;
+      margin-bottom: 10px;
+    }
+    .product-description {
+      margin-bottom: 20px;
+    }
+    .add-to-cart-button {
+      background-color: #f0c14b;
+      border: none;
+      color: #111;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 3px;
+    }
+    .add-to-cart-button:hover {
+      background-color: #f7da91;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Product Page Example</h1>
+  </header>
+  <main>
+    <div class="product-container">
+      <img class="product-image" src="{{ MEDIA_URL }}poster.jpg" alt="Product Image">
+      <h2 class="product-title">Example Product</h2>
+      <p class="product-price">$1</p>
+      <p class="product-description">A Customized Onepiece wanted poster with your own photo,Name and Bounty, Its cool(totally) and would look great where ever you hang it(totally dope) just for $1 .</p>
+      <a href="/generate_poster" class="add-to-cart-button"> Customize Now </a>
+      
+    </div>
+  </main>
+</body>
+</html>
